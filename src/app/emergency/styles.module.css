@@ -1,0 +1,13 @@
+.stopContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  margin-top: 2rem;
+}
+
+.stop {
+  position: relative;
+  height: 100%;
+  aspect-ratio: 1;
+}
