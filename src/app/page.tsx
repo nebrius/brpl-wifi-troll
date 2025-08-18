@@ -1,7 +1,19 @@
-import Link from "next/link";
+"use client";
+
 import styles from "./page.module.css";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
+  const onYesClick = () => {
+    router.push("/emergency");
+  };
+
+  const onNoClick = () => {
+    router.push("/ten-principles");
+  };
+
   return (
     <div className={styles.page}>
       <p>Welcome to the Black Rock Public Library WiFi login page!</p>
@@ -12,12 +24,14 @@ export default function Home() {
       </p>
       <p>
         Question one: is this an emergency?
-        <Link className={styles.linkMargin} href="/emergency">
-          Yes
-        </Link>
-        <Link className={styles.linkMargin} href="/login">
-          No
-        </Link>
+        <div className={styles.emergencyButtonContainer}>
+          <button className={styles.emergencyButton} onClick={onYesClick}>
+            Yes
+          </button>
+          <button className={styles.emergencyButton} onClick={onNoClick}>
+            No
+          </button>
+        </div>
       </p>
     </div>
   );
