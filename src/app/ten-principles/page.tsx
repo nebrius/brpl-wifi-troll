@@ -1,12 +1,12 @@
 "use client";
 
-import styles from "./styles.module.css";
+import { Connect } from "@/components/Connect";
 import { useRouter } from "next/navigation";
 
 export default function TenPrinciplesPage() {
   const router = useRouter();
   const onclick = () => {
-    router.push("/login");
+    router.push("/intake");
   };
 
   return (
@@ -132,11 +132,7 @@ export default function TenPrinciplesPage() {
         uploads...oh who are we kidding, you&apos;re going to be incapable of
         downloading a single byte.
       </p>
-      <div className={styles.connectContainer}>
-        <button className={styles.connect} onClick={onclick}>
-          Connect
-        </button>
-      </div>
+      <Connect onClick={onclick}>Connect</Connect>
     </>
   );
 }

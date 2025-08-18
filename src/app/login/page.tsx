@@ -1,16 +1,19 @@
 "use client";
 
+import { Connect } from "@/components/Connect";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function LoginPage() {
-  const [seconds, setSeconds] = useState(15);
+  const [seconds, setSeconds] = useState(60);
   const router = useRouter();
+
+  const [tries, setTries] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       if (seconds <= 0) {
-        router.push("/loginSuccess");
+        router.push("/loginFailure");
       } else {
         setSeconds((prevSeconds) => prevSeconds - 1);
       }
@@ -20,8 +23,16 @@ export default function LoginPage() {
   }, [router, seconds]);
 
   const handleSubmit = () => {
+    setTries((tries) => tries + 1);
     alert("Incorrect credentials");
   };
+
+  useEffect(() => {
+    if (tries === 3) {
+      alert("Really? Sigh, I guess you can let in");
+      router.push("/loginSuccess");
+    }
+  }, [router, tries]);
 
   return (
     <>
@@ -36,7 +47,7 @@ export default function LoginPage() {
         You have {seconds} seconds to enter your credentials before your device
         is permanently banned from using the WiFi.
       </p>
-      <button onClick={handleSubmit}>Submit</button>
+      <Connect onClick={handleSubmit}>Connect</Connect>
     </>
   );
 }
