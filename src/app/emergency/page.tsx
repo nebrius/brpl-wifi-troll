@@ -4,6 +4,7 @@ export default function EmergencyPage() {
   return (
     <>
       <div className={styles.stopContainer}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className={styles.stop} src="/stop.jpg" alt="Stop" />
       </div>
       <p>Do not use this WiFi for emergency purposes!</p>

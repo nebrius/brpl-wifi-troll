@@ -5,50 +5,39 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function LoginPage() {
-  const [seconds, setSeconds] = useState(60);
+  const [seconds, setSeconds] = useState(15);
   const router = useRouter();
-
-  const [tries, setTries] = useState(0);
+  const [value, setValue] = useState("");
 
   useEffect(() => {
     const timer = setInterval(() => {
       if (seconds <= 0) {
-        router.push("/loginFailure");
+        router.push(`/ending?answer=${encodeURIComponent(value)}`);
       } else {
         setSeconds((prevSeconds) => prevSeconds - 1);
       }
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [router, seconds]);
+  }, [router, seconds, value]);
 
   const handleSubmit = () => {
-    setTries((tries) => tries + 1);
-    alert("Incorrect credentials");
+    router.push(`/ending?answer=${encodeURIComponent(value)}`);
   };
-
-  useEffect(() => {
-    if (tries === 3) {
-      router.push("/loginSuccess");
-    }
-  }, [router, tries]);
 
   return (
     <>
+      <p>What is the best art car on Playa?</p>
       <p>
-        Please enter your personal information to access the WiFi. This
-        information was supplied to you last Burn. You kept it in a safe place
-        like you said you would, right?
+        <input
+          value={value}
+          onChange={(e) => setValue(e.currentTarget.value)}
+          type="text"
+        />
       </p>
       <p>
-        Library card number: <input type="text" />
-      </p>
-      <p>
-        PIN: <input type="password" />
-      </p>
-      <p>
-        You have {seconds} seconds to enter your credentials before your device
-        is permanently banned from using the WiFi.
+        You have {seconds} seconds before your device is permanently banned from
+        using the WiFi.
       </p>
       <Connect onClick={handleSubmit} type="submit">
         Connect

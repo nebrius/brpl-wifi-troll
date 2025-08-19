@@ -29,14 +29,8 @@ export default function IntakePage() {
         <input type="text" id="playa-name" name="playa-name" />
       </div>
       <div className={styles.formRow}>
-        <label htmlFor="crush">
-          Last person you had a crush on that broke your heart:
-        </label>
-        <input type="text" id="crush" name="crush" />
-      </div>
-      <div className={styles.formRow}>
         <label htmlFor="crush2">
-          Last person who had a crush you who&apos;s heart you broke:
+          Last person who had a crush on you who&apos;s heart you broke:
         </label>
         <input type="text" id="crush2" name="crush2" />
       </div>
@@ -89,10 +83,10 @@ export default function IntakePage() {
         <div>
           <input type="radio" id="like-this-4" name="like-this" value="4" />
           <label htmlFor="like-this-4">
-            Cause I&apos;m awesome! Most people I met are so banal and boring,
-            everyone is caught up in the bullshit in their lives and refuses to
-            see that if they just followed my example then they would be happy
-            and content and that&apos;s why I&apos;m alone
+            Cause I&apos;m awesome! Most people I met are so banal and boring
+            and everyone is caught up in the bullshit of their lives and refuses
+            to see that if they just followed my example then they would be
+            happy and content and that&apos;s why I&apos;m alone
           </label>
         </div>
         <div>

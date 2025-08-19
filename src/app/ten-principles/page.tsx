@@ -21,13 +21,11 @@ export default function TenPrinciplesPage() {
 
       <ol className="principle-list">
         <li>
-          <strong>Radical Inclusion:</strong> Anyone may use this WiFi. Yes,
-          even influencers who are ruining Burning man for everyone else and
-          should be banned from the human race. We welcome and respect all
-          bandwidth hogs, crypto miners, and people who stream 4K videos during
-          peak hours and ruin WiFi for everyone else. No prerequisites exist for
-          participation except a functioning device and the audacity to believe
-          you deserve free WiFi.
+          <strong>Radical Inclusion:</strong> Anyone may use this WiFi, even
+          crypto bros and influencers. We welcome and respect all people who
+          stream 4K videos during peak hours and ruin WiFi for everyone else. No
+          prerequisites exist for participation except a functioning device and
+          the audacity to believe you deserve free WiFi.
         </li>
 
         <li>
@@ -59,7 +57,7 @@ export default function TenPrinciplesPage() {
         <li>
           <strong>Radical Self-expression:</strong> Radical self-expression
           arises from the unique gifts of the individual. By using our WiFi, you
-          agree that your unique gift to the world <em>must</em> be one of the
+          agree that your unique gift to the world include at least one of the
           following:
           <ul>
             <li>
@@ -87,8 +85,8 @@ export default function TenPrinciplesPage() {
           <strong>Communal Effort:</strong> Our community values creative
           cooperation and collaboration. This means you&apos;ll share bandwidth
           with everyone else and pretend to enjoy the communal experience of
-          collectively 2 hours to send a text to your loved one while someone
-          else is streaming the latest episode of MILF Manor.
+          waiting 2 hours to send a text to your loved one while someone else is
+          streaming the latest episode of MILF Manor.
         </li>
 
         <li>
@@ -104,8 +102,7 @@ export default function TenPrinciplesPage() {
           <strong>Leaving No Trace:</strong> We are committed to leaving no
           physical trace of our activities. However, we make no promises about
           the digital traces, cookies, tracking pixels, and behavioral data
-          we&apos;ll leave scattered across the WiFi like playa dust in your
-          tent. You&apos;re welcome.
+          we&apos;ll leave scattered across the WiFi like playa dust.
         </li>
 
         <li>
