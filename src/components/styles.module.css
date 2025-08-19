@@ -2,17 +2,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .connect {
+  /* Reset button styles */
+  all: unset;
+  box-sizing: border-box;
+  
+  /* Layout */
   min-width: 200px;
   min-height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
-  text-wrap: no-wrap;
-  padding: 0.5rem 1rem;
-  border-radius: 3px;
+  padding: 0.75rem 1.5rem;
+  
+  /* Typography */
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  
+  /* Modern styling */
+  background: rgb(0, 125, 195);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.connect:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background: rgb(0, 105, 175);
+}
+
+.connect:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.connect:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.connect:disabled:hover {
+  transform: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background: rgb(0, 125, 195);
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { Connect } from "@/components/Connect";
 import styles from "./styles.module.css";
 import { useRouter } from "next/navigation";
 
@@ -25,12 +26,8 @@ export default function Home() {
       <div>
         Question one: is this an emergency?
         <div className={styles.emergencyButtonContainer}>
-          <button className={styles.emergencyButton} onClick={onYesClick}>
-            Yes
-          </button>
-          <button className={styles.emergencyButton} onClick={onNoClick}>
-            No
-          </button>
+          <Connect onClick={onYesClick}>Yes</Connect>
+          <Connect onClick={onNoClick}>No</Connect>
         </div>
       </div>
     </div>
