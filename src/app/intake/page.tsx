@@ -37,24 +37,24 @@ export default function IntakePage() {
       <div className={styles.formRow}>
         <label htmlFor="art">
           Which art piece in Deep Playa is your favorite and why? Please answer
-          in 1,000 characters or more.
+          in 250 characters or more.
         </label>
         <textarea
           id="art"
           name="art"
-          minLength={1000}
+          minLength={250}
           value={artValue}
           onChange={(e) => setArtValue(e.currentTarget.value)}
         />
-        {artValue.length < 1000 ? (
+        {artValue.length < 250 ? (
           <span style={{ color: "red" }}>
-            {1000 - artValue.length} characters remaining
+            {250 - artValue.length} characters remaining
           </span>
-        ) : artValue.length > 4000 ? (
-          "What is wrong with you?"
-        ) : artValue.length > 3000 ? (
-          "Seriosuly, please stop"
         ) : artValue.length > 2000 ? (
+          "What is wrong with you?"
+        ) : artValue.length > 1000 ? (
+          "Seriosuly, please stop"
+        ) : artValue.length > 500 ? (
           "OK you can stop now"
         ) : (
           "You did it!"
