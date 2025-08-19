@@ -1,13 +1,10 @@
-import Image from "next/image";
 import styles from "./styles.module.css";
 
 export default function EmergencyPage() {
   return (
     <>
       <div className={styles.stopContainer}>
-        <div className={styles.stop}>
-          <Image src="/stop.jpg" alt="Stop" fill />
-        </div>
+        <img className={styles.stop} src="/stop.jpg" alt="Stop" />
       </div>
       <p>Do not use this WiFi for emergency purposes!</p>
       <p>

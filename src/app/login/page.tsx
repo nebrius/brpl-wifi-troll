@@ -29,7 +29,6 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (tries === 3) {
-      alert("Really? Sigh, I guess you can let in");
       router.push("/loginSuccess");
     }
   }, [router, tries]);
