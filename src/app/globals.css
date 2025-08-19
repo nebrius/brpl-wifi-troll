@@ -7,5 +7,6 @@ body {
 .app {
   position: absolute;
   inset: 0;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }

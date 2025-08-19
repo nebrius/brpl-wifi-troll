@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import styles from "./styles.module.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +26,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div className="app">{children}</div>
+        <div className="app">
+          <header>
+            <Link href="/">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className={styles.header}
+                src="/header.png"
+                alt="Black Rock Public Library"
+              />
+            </Link>
+          </header>
+          <article className={styles.article}>{children}</article>
+        </div>
       </body>
     </html>
   );

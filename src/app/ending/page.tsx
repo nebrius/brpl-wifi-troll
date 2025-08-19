@@ -60,7 +60,7 @@ export default function Ending() {
             </p>
           </>
         ),
-        button: "Connect already!!",
+        button: "Finally",
       },
       {
         content: (
@@ -69,14 +69,7 @@ export default function Ending() {
             Black Rock Public Library WiFi
           </p>
         ),
-        button: (
-          <div>
-            <div>Seriously, what is</div>
-            <div>
-              wrong with <em>you!</em>
-            </div>
-          </div>
-        ),
+        button: "You're not going to stop, are you",
       },
       {
         content: <p>I am so excited we&apos;re on this journey together</p>,
@@ -129,20 +122,13 @@ export default function Ending() {
             <p>The previous person seemed trustworthy too. But they blabbed.</p>
           </>
         ),
-        button: "Connect already!!",
+        button: <>I mean...</>,
       },
       {
         content: (
           <p>It&apos;s OK though, they&apos;ll never access the WiFi again.</p>
         ),
-        button: (
-          <div>
-            <div>Seriously, what is</div>
-            <div>
-              wrong with <em>you!</em>
-            </div>
-          </div>
-        ),
+        button: <>Seriously, what is wrong with you!</>,
       },
       {
         content: <p>I made sure of that.</p>,
@@ -188,11 +174,11 @@ export default function Ending() {
             <p>Why would you play such a cruel joke on me?</p>
           </>
         ),
-        button: "Connect!",
+        button: "No...I...",
       },
       {
         content: <p>And here I thought we were friends.</p>,
-        button: "Connect already!!",
+        button: "Seriously...",
       },
       {
         content: (
@@ -203,14 +189,7 @@ export default function Ending() {
             </p>
           </>
         ),
-        button: (
-          <div>
-            <div>Seriously, what is</div>
-            <div>
-              wrong with <em>you!</em>
-            </div>
-          </div>
-        ),
+        button: <>They weren&apos;t deep</>,
       },
       {
         content: (
