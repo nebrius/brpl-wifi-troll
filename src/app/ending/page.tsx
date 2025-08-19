@@ -1,13 +1,13 @@
 "use client";
 
 import { Connect } from "@/components/Connect";
-import { JSX, useState } from "react";
+import { JSX, Suspense, useState } from "react";
 import styles from "./styles.module.css";
 import { useSearchParams } from "next/navigation";
 
 type Ending = "good" | "ehh" | "bad";
 
-export default function Ending() {
+function EndingContents() {
   const [currentStep, setCurrentStep] = useState(0);
   const onclick = () => {
     setCurrentStep((currentStep) => currentStep + 1);
@@ -224,5 +224,13 @@ export default function Ending() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function Ending() {
+  return (
+    <Suspense>
+      <EndingContents />
+    </Suspense>
   );
 }
