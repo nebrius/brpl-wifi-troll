@@ -106,7 +106,7 @@ export default function IntakePage() {
         </div>
       </div>
       <div className={styles.formRow}>
-        <Connect type="submit" disabled={artValue.length < 1000}>
+        <Connect type="submit" disabled={artValue.length < 250}>
           Connect
         </Connect>
       </div>
