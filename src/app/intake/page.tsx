@@ -29,10 +29,10 @@ export default function IntakePage() {
         <input type="text" id="playa-name" name="playa-name" />
       </div>
       <div className={styles.formRow}>
-        <label htmlFor="crush2">
+        <label htmlFor="crush">
           Last person who had a crush on you who&apos;s heart you broke:
         </label>
-        <input type="text" id="crush2" name="crush2" />
+        <input type="text" id="crush" name="crush" />
       </div>
       <div className={styles.formRow}>
         <label htmlFor="art">
@@ -63,8 +63,8 @@ export default function IntakePage() {
       <div className={styles.formRow}>
         <label>Why are you like this?</label>
         <div>
-          <input type="radio" id="like-this-2" name="like-this" value="2" />
-          <label htmlFor="like-this-2">
+          <input type="radio" id="like-this-1" name="like-this" value="1" />
+          <label htmlFor="like-this-1">
             My therapist says I developed an avoidant-dismissive attachment
             style due to my childhood experiences which causes me to push people
             away and freak out when anyone tries to get close to me and
@@ -72,8 +72,8 @@ export default function IntakePage() {
           </label>
         </div>
         <div>
-          <input type="radio" id="like-this-3" name="like-this" value="3" />
-          <label htmlFor="like-this-3">
+          <input type="radio" id="like-this-2" name="like-this" value="2" />
+          <label htmlFor="like-this-2">
             My therapist says I developed an anxious-preoccupied attachment
             style due to my childhood experiences which causes me to pull people
             too close and freak out when they try and exhibit any autonomy and
@@ -81,8 +81,8 @@ export default function IntakePage() {
           </label>
         </div>
         <div>
-          <input type="radio" id="like-this-4" name="like-this" value="4" />
-          <label htmlFor="like-this-4">
+          <input type="radio" id="like-this-3" name="like-this" value="3" />
+          <label htmlFor="like-this-3">
             Cause I&apos;m awesome! Most people I met are so banal and boring
             and everyone is caught up in the bullshit of their lives and refuses
             to see that if they just followed my example then they would be
@@ -90,19 +90,19 @@ export default function IntakePage() {
           </label>
         </div>
         <div>
-          <input type="radio" id="like-this-5" name="like-this" value="5" />
-          <label htmlFor="like-this-5">I did too many mushrooms</label>
+          <input type="radio" id="like-this-4" name="like-this" value="4" />
+          <label htmlFor="like-this-4">I did too many mushrooms</label>
         </div>
       </div>
       <div className={styles.formRow}>
         <label>Yes or no?</label>
         <div>
-          <input type="radio" id="like-this-5" name="like-this" value="5" />
-          <label htmlFor="like-this-5">Yes</label>
+          <input type="radio" id="yes" name="like-this" value="5" />
+          <label htmlFor="yes">Yes</label>
         </div>
         <div>
-          <input type="radio" id="like-this-5" name="like-this" value="5" />
-          <label htmlFor="like-this-5">No</label>
+          <input type="radio" id="no" name="like-this" value="5" />
+          <label htmlFor="no">No</label>
         </div>
       </div>
       <div className={styles.formRow}>
