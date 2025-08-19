@@ -36,7 +36,11 @@ export default function LoginPage() {
 
   return (
     <>
-      <p>Please enter your library card number and PIN to access the WiFi</p>
+      <p>
+        Please enter your personal information to access the WiFi. This
+        information was supplied to you last Burn. You kept it in a safe place
+        like you said you would, right?
+      </p>
       <p>
         Library card number: <input type="text" />
       </p>
@@ -47,7 +51,9 @@ export default function LoginPage() {
         You have {seconds} seconds to enter your credentials before your device
         is permanently banned from using the WiFi.
       </p>
-      <Connect onClick={handleSubmit}>Connect</Connect>
+      <Connect onClick={handleSubmit} type="submit">
+        Connect
+      </Connect>
     </>
   );
 }

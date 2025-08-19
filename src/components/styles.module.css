@@ -6,10 +6,12 @@
 }
 
 .connect {
-  width: 200px;
-  height: 60px;
+  min-width: 200px;
+  min-height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  text-wrap: no-wrap;
+  padding: 0.5rem;
 }

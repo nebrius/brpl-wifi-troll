@@ -22,7 +22,7 @@ export default function Home() {
         the correct terms of service for you to agree to, we must ask you a few
         questions.
       </p>
-      <p>
+      <div>
         Question one: is this an emergency?
         <div className={styles.emergencyButtonContainer}>
           <button className={styles.emergencyButton} onClick={onYesClick}>
@@ -32,7 +32,7 @@ export default function Home() {
             No
           </button>
         </div>
-      </p>
+      </div>
     </div>
   );
 }

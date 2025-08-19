@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.cta {
+  padding: 2rem;
+}
