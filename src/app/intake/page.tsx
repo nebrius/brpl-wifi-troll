@@ -60,8 +60,8 @@ export default function IntakePage() {
           "You did it!"
         )}
       </div>
-      <div className={styles.formRow}>
-        <label>Why are you like this?</label>
+      <fieldset id="like-this" className={styles.formRow}>
+        <legend>Why are you like this?</legend>
         <div>
           <input type="radio" id="like-this-1" name="like-this" value="1" />
           <label htmlFor="like-this-1">
@@ -93,18 +93,18 @@ export default function IntakePage() {
           <input type="radio" id="like-this-4" name="like-this" value="4" />
           <label htmlFor="like-this-4">I did too many mushrooms</label>
         </div>
-      </div>
-      <div className={styles.formRow}>
-        <label>Yes or no?</label>
+      </fieldset>
+      <fieldset id="yes-no" className={styles.formRow}>
+        <legend>Yes or no?</legend>
         <div>
-          <input type="radio" id="yes" name="like-this" value="5" />
+          <input type="radio" id="yes" name="yes-no" value="yes" />
           <label htmlFor="yes">Yes</label>
         </div>
         <div>
-          <input type="radio" id="no" name="like-this" value="5" />
+          <input type="radio" id="no" name="yes-no" value="no" />
           <label htmlFor="no">No</label>
         </div>
-      </div>
+      </fieldset>
       <div className={styles.formRow}>
         <Connect type="submit" disabled={artValue.length < 250}>
           Connect
